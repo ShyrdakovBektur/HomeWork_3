@@ -16,7 +16,7 @@ public class BankAccount {
 
     public void withDraw(double sum) throws LimitException {
         if (sum > amount) {
-            throw new LimitException("Вы проситье больше деньег чем, у вас имеется!",amount);
+            throw new LimitException("Вы проситье больше денег чем, у вас имеется!",amount);
         }
         amount -= sum;
     }
